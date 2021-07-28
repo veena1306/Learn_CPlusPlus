@@ -1,0 +1,29 @@
+Difference between vectors and List :--
+
+1. vectors :  
+    1.vectors are dynamic arrays that resizes itslef automatically when an element is entered or removed from it.
+    2.vectors are stored in contiguous memory location.
+    3.Elements are inserted at the end of arrays.
+
+2. LIST :
+    1. List supports both forward and backward traversal.
+    2. it has non contiguous memory.
+    3. No preallocated memories.
+
+
+Differences :
+
+              vector                                                       list
+1    It has contiguous memory                               It has non contiguous memory
+2    My have default size                                   no default size
+3.   elemnts have stoarge for them only                     have storage to store pointer to the next node also
+4.   only insetion and deletion at end                      All operation have contant time complexity
+     has constant time, elase are expensive
+5.   random access of elements are possible                 random access is not possible
+
+
+
+
+
+
+
