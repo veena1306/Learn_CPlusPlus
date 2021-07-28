@@ -5,6 +5,7 @@
 Write your code in this editor and press "Debug" button to debug it.
 
 *******************************************************************************/
+/* one pointer is pointer to one iobject at a time */
 
 #include <iostream>
 #include <memory>
