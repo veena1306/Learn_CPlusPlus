@@ -6,8 +6,12 @@ Write your code in this editor and press "Debug" button to debug it.
 
 *******************************************************************************/
 
-//If you are using shared_ptr then more than one pointer can point to this one object
-//at a time and it’ll maintain a Reference Counter using use_count() method. 
+/* It is the process of creating a copy of an object by copying data of all the member variables as it is. 
+Only a default Constructor produces a shallow copy. 
+A Default Constructor is a constructor which has no arguments
+
+*/
+
 
 
 #include <iostream>
