@@ -51,3 +51,17 @@ int main()
     
     delete bp;
 }
+
+
+//without vd : - 
+Constructing base
+Constructing derived
+Destructing base
+
+
+//with vd :-
+
+Constructing base
+Constructing derived
+Destructing derived
+Destructing base 
