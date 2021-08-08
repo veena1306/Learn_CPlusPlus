@@ -1,2 +1,3 @@
 3. weak_ptr 
-It’s much more similar to shared_ptr except it’ll not maintain a Reference Counter.In this case, a pointer will not have a strong hold on the object. The reason is if suppose pointers are holding the object and requesting for other objects then they may form a Deadlock. 
+It’s much more similar to shared_ptr except it’ll not maintain a Reference Counter.In this case, a pointer will not have a strong hold on the object. 
+The reason is if suppose pointers are holding the object and requesting for other objects then they may form a Deadlock. 
