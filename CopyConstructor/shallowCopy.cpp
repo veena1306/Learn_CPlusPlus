@@ -14,25 +14,33 @@ A Default Constructor is a constructor which has no arguments
 
 
 
+/******************************************************************************
+
+                              Online C++ Debugger.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Debug" button to debug it.
+
+*******************************************************************************/
+
 #include <iostream>
-#include <memory>
+#include<cstring>
 using namespace std;
 
-class Base
+class Test
 {
   private:
-  int a;
-  int b;
-  int *ptr;
+    int a;
+    int b;
+    int *ptr;
 
-  public :
+  public:
   
-  Base()
-  {
-    ptr = new int;
-  }
-  
-  void input(int x, int y, int z)
+   Test()
+   {
+     ptr = new int;
+   }
+    
+  void setInput(int x, int y, int z)
   {
     a = x;
     b = y;
@@ -41,20 +49,27 @@ class Base
   
   void print()
   {
-   cout << "value of a is : " << a <<  endl;
-   cout << "value of b is " << b << endl;
-   cout << "value of ptr is : " << *ptr << endl;
+    cout << "value of a is : " << a << endl;
+    cout << "value of b is : " << b << endl;
+    cout << "value of *ptr is : " << *ptr << endl;
   }
-
+  
+  Test(const Test &old_object)
+  {
+    a = old_object.a;
+    b = old_object.b;
+    *ptr = *(old_object.ptr);
+  }
     
-};
-
+};   
 int main()
-{
-    Base b1;
-    b1.input(4,8,12);
-    b1.print();
-    
-    Base b2(b1);
-    b2.print();
+{ 
+   Test t1;
+   t1.setInput(1,2,3);
+   t1.print();
+   
+   Test t2(t1);
+   
+   t2.print();
 }
+
