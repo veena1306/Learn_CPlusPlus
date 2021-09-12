@@ -32,7 +32,8 @@ int main()
   
   
 =====================================================================================================================================================
-
+//It is used to convert one pointer of another pointer of any type, no matter either the class is related to each other or not.
+//It does not check if the pointer type and data pointed by the pointer is same or not.
 
 // CPP program to demonstrate working of 
 // reinterpret_cast
