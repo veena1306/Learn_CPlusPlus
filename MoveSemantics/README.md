@@ -15,5 +15,15 @@
        3. can bind it to l value reference.
        
        
-    
-   
+    # summary :- 
+
+      1. l values can appear on the left side of in-built assignment operator, r values can't.
+      2. non-const l value references can only bind to l values.
+      3. non-const r value references can only bind to r values.
+      
+      
+      
+      
+# rvalues :- 
+     1. A r value represents an temporary object that has no identity, we can assume that the r value is ready to give away ownership of its resources.
+     2. 
