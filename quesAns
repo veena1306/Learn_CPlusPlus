@@ -1,0 +1,3 @@
+# Why copy constructor argument should be const in C++?
+  When we create our own copy constructor, we pass an object by reference and we generally pass it as a const reference.
+  One reason for passing const reference is, we should use const in C++ wherever possible so that objects are not accidentally modified
